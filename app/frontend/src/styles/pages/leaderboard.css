@@ -1,0 +1,211 @@
+.add-task-board-table-section {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.add-task-board-table-section form {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana , Tahoma , sans-serif;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.add-task-board-table-section #main-label {
+  color: #3d495c;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 150%;
+ }
+
+.add-task-board-table-section #select-label {
+  color: #3d495c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  line-height: 150%;
+  border: 1px solid #9fa1a7;
+  border-radius: 2px;
+}
+
+.add-task-board-table-section form label select {
+  background: white;
+  border-bottom: 1px solid #3d495c;
+  color: #586375;
+  cursor: pointer;
+  font-style: normal;
+  text-align: center;
+  height: 25px;
+  width: 288px;
+  border: 1px solid #9fa1a7;
+  border-radius: 2px;
+}
+
+.add-task-board-table-section form button {
+  align-self: center;
+  background: #003be5;
+  border: 1px solid #003be5;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-style: normal;
+  height: 40px;
+  line-height: 150%;
+  margin: 0 20px;
+  margin-top: 20px;
+  width: 164px;
+}
+
+.task-board-table-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-board-table-section .filter-form {
+  margin-top: 15px;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 16px;
+  width: 300px;
+  height: 100px;
+}
+
+.task-board-table-section form label select {
+  background: white;
+  border-bottom: 1px solid #3d495c;
+  color: #586375;
+  cursor: pointer;
+  font-style: normal;
+  text-align: center;
+  height: 25px;
+  width: 150px;
+  border: 1px solid #9fa1a7;
+  border-radius: 2px;
+}
+
+.task-board-table-section form button {
+  align-self: center;
+  background: #003be5;
+  border: 1px solid #003be5;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 150%;
+  margin: 0 10px;
+  width: 50px;
+}
+
+/* */
+
+.score-board-table-section {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+
+.score-board-table-section table {
+  height: min-content;
+}
+
+.score-board-table thead th {
+  padding: 15px 0;
+}
+
+.score-board-table thead tr th {
+  color: black;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+}
+
+.score-board-classification {
+  background: #023031;
+  border-radius: 8px;
+  color: white;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  height: 43px;
+  line-height: 22px;
+  min-width: 137px;
+  text-align: center;
+}
+
+.score-board-team-name {
+  background: #036b52;
+  border-radius: 8px;
+  color: white;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  height: 43px;
+  line-height: 22px;
+  min-width: 183px;
+  text-align: center;
+}
+
+.score-board-total-points, .score-board-total-victories {
+  background: #f0f2f5;
+  border-radius: 8px;
+  color: black;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  height: 43px;
+  line-height: 22px;
+  min-width: 87px;
+  text-align: center;
+}
+
+.score-board-total-looses, .score-board-goals-own, .score-board-efficiency {
+  background: #f0f2f5;
+  border-radius: 8px;
+  color: black;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  height: 43px;
+  line-height: 22px;
+  min-width: 87px;
+  text-align: center;
+}
+
+.score-board-total-games, .score-board-total-draws {
+  background: #e1e5eb;
+  border-radius: 8px;
+  color: black;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  height: 43px;
+  line-height: 22px;
+  min-width: 87px;
+  text-align: center;
+}
+
+.score-board-goals-favor, .score-board-goals-balance {
+  background: #e1e5eb;
+  border-radius: 8px;
+  color: black;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  height: 43px;
+  line-height: 22px;
+  min-width: 87px;
+  text-align: center;
+}
