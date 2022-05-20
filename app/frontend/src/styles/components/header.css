@@ -1,0 +1,24 @@
+.common-header {
+  align-items: center;
+  background: #002c33;
+  bottom: 2.33%;
+  display: flex;
+  justify-content: space-between;
+  left: 0%;
+  right: 0%;
+  top: -2.33%;
+}
+
+.common-header h1 {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-grow: 2;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  justify-content: center;
+  line-height: 36px;
+  text-align: center;
+}
+

@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import TaskManager from './pages/TaskManager';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <TaskManager />
+  </React.StrictMode>,
 );
