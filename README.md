@@ -1,4 +1,4 @@
-# Boas vindas ao Task Manager (Gerenciador de tarefas)! ⚽️
+# Boas vindas ao Task Manager (Gerenciador de tarefas)!
 
 O Task Manager é um site informativo sobre partidas e classificações de futebol!
 
