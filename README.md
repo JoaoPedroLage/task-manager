@@ -1,6 +1,6 @@
 # Boas vindas ao Task Manager (Gerenciador de tarefas)! ⚽️
 
-O Task Manager é um site informativo sobre partidas e classificações de futebol! ⚽️
+O Task Manager é um site informativo sobre partidas e classificações de futebol!
 
 No desenvolvimento do Task Manager, fiquei responsável por desenvolver uma API e também integrar as aplicações para que funcionem consumindo um banco de dados.
 
