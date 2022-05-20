@@ -4,11 +4,12 @@ import db from '.';
 class Tasks extends Model {
   public id!: number;
 
-  public taskName!: string;
+  public taskName!: string | any;
 
   public taskDescription!: string;
 
-  public taskStatus!: string;
+  public taskStatus!: string | any;
+  createdAt: any;
 }
 
 Tasks.init({

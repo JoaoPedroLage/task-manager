@@ -5,6 +5,7 @@ export type TaskData = {
   taskName?: string;
   taskDescription?: string;
   taskStatus?: string;
+  createdAt?: Date;
 };
 
 export interface ITask {

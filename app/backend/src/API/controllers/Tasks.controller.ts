@@ -5,11 +5,11 @@ export default class TasksController implements ITasksController {
   constructor(private _tasksService: ITasksService) {}
 
   public findAll = async (req: Request, res: Response) => {
-    const { taskStatus } = req.query;
+    const { filter } = req.body;
     let foundTasks;
 
-    if (taskStatus === 'pendente' || taskStatus === 'em andamento' || taskStatus === 'pronto') {
-      foundTasks = await this._tasksService.findAll(taskStatus);
+    if (filter === 'status' || filter === 'dataDeCriacao' || filter === 'ordemAlfa') {
+      foundTasks = await this._tasksService.findAll(filter);
     } else foundTasks = await this._tasksService.findAll();
 
     const { code, message, tasks } = foundTasks;

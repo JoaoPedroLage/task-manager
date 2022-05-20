@@ -4,19 +4,19 @@ import TasksModel from '../models/Tasks.model';
 export default class MatchService implements ITasksService {
   private _tasksModel = TasksModel;
 
-  public async findAll(status?: string | any) {
+  public async findAll(filter: string | any) {
     let tasksFound;
 
-    if (status === 'pendente') {
-      tasksFound = await this._tasksModel.findAll({
-        where: { status: "pendente" }});
-    } else if (status === 'em andamento') {
-      tasksFound = await this._tasksModel.findAll({
-        where: { status: "em andamento" }});
-    } else if (status === 'pronto') {
-      tasksFound = await this._tasksModel.findAll({
-        where: { status: "pronto" }});
-    } else if (!status) {
+    if (filter === 'status') {
+      tasksFound = await this._tasksModel.findAll();
+      tasksFound.sort((a, b) => b.taskStatus - a.taskStatus);
+    } else if (filter === 'dataDeCriacao') {
+      tasksFound = await this._tasksModel.findAll();
+      tasksFound.sort((a, b) => b.createdAt - a.createdAt);
+    } else if (filter === 'ordemAlfa') {
+      tasksFound = await this._tasksModel.findAll();
+      tasksFound.sort((a, b) => b.taskName - a.taskName);
+    } else if (!filter) {
       tasksFound = await this._tasksModel.findAll();
     }
 
