@@ -4,7 +4,7 @@ O Task Manager é um site informativo sobre partidas e classificações de futeb
 
 No desenvolvimento do Task Manager, fiquei responsável por desenvolver uma API e também integrar as aplicações para que funcionem consumindo um banco de dados.
 
-Nesse projeto, o back-end é utilizando modelagem de dados através do Sequelize.
+Nesse projeto, o back-end é feito com modelagem de dados através do Sequelize.
 
 ## O que foi desenvolvido
 
