@@ -4,7 +4,7 @@
   "description": "",
   "main": "./build/API/server",
   "scripts": {
-    "start": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx -y tsc && node .",
+    "start": "npx -y tsc && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
