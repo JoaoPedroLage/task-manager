@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { requestPost } from '../services/requests';
 
 const AddTask = () => {
-  const newTaskHandler = async () => {
+  const newTaskHandler = async (e) => {
+    e.preventDefault();
     const taskName = document.getElementById('task-name').value;
     const taskDescription = document.getElementById('task-description').value;
     const taskStatus = document.getElementById('task-status').value;
@@ -32,7 +33,7 @@ const AddTask = () => {
       <button
         data-testid="score_boarding__classification_filter_button"
         type="submit"
-        onClick={ () => newTaskHandler() }
+        onClick={ (e) => newTaskHandler(e) }
       >
         Adicionar
       </button>
