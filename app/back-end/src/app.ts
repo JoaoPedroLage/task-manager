@@ -1,6 +1,7 @@
 import express, { NextFunction, Response, Request } from 'express';
 import tasksRoute from './routes/Tasks.route';
-import cors from 'cors';
+
+const cors = require("cors");
 
 class App {
   public app: express.Express;
