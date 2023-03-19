@@ -30,7 +30,7 @@ class App {
     this.app.get(
       '/',
       (_req: Request, res: Response, _next: NextFunction) => {
-        res.status(200).json({ message: 'Ok.' });
+        res.status(200).json({ message: 'OK.' });
       },
     );
 
