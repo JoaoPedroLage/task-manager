@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://41cf-18-231-45-178.ngrok.io',
+  baseURL: 'http://54.232.16.28:3001/',
 });
 
 export const requestData = async (endpoint, body) => {
