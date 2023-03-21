@@ -35,9 +35,11 @@ class App {
       },
     );
 
-    this.app.use('/tasks', tasksRoute, cors({
-      origin: '*',
-    }));
+    this.app.use('/tasks',
+      tasksRoute,
+      cors({
+        origin: '*',
+      }));
   }
 
   public start(PORT: string | number): void {
