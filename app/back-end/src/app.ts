@@ -23,7 +23,7 @@ class App {
     this.app.use(accessControl);
     this.app.use(express.json());
     this.app.use(cors({
-      origin: "https://task-manager-by-jplage.vercel.app",
+      origin: '*',
     }));
   }
 
