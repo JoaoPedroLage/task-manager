@@ -9,7 +9,7 @@ const AddTask = () => {
     const taskDescription = document.getElementById('task-description').value;
     const taskStatus = document.getElementById('task-status').value;
 
-    await requestPost('/tasks', { taskName, taskDescription, taskStatus });
+    await requestPost('/', { taskName, taskDescription, taskStatus });
   };
 
   return (
