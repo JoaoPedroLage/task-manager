@@ -29,14 +29,14 @@ class App {
   }
 
   private routes(): void {
-    this.app.get(
-      '/',
-      (_req: Request, res: Response, _next: NextFunction) => {
-        res.status(200).json({ message: 'OK.' });
-      },
-    );
+    // this.app.get(
+    //   '/',
+    //   (_req: Request, res: Response, _next: NextFunction) => {
+    //     res.status(200).json({ message: 'OK.' });
+    //   },
+    // );
 
-    this.app.use('/tasks', tasksRoute);
+    this.app.use('/', tasksRoute);
   }
 
   public start(PORT: string | number): void {

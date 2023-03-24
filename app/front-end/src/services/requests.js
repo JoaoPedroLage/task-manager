@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://taskmanger-backed-production.up.railway.app/',
+  baseURL: 'https://taskmanger-backed-production.up.railway.app',
 });
 
 export const requestData = async (endpoint, body) => {

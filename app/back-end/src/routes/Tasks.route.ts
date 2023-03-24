@@ -3,9 +3,16 @@ import { Request, Response, Router } from 'express';
 import TasksController from '../controllers/Tasks.controller';
 import TasksBoardService from '../services/Tasks.service';
 
+const cors = require("cors");
+
+
 const tasksController = new TasksController(new TasksBoardService());
 
 const tasksBoardRouter = Router();
+
+tasksBoardRouter.use(cors({
+  origin: '*'
+}));
 
 tasksBoardRouter.get(
   '/',
