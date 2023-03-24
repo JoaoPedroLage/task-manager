@@ -13,6 +13,10 @@ class App {
   }
 
   private config(): void {
+    this.app.use(cors({
+      origin: '*',
+    }));
+
     const accessControl: express.RequestHandler = (_req, res, next) => {
       res.header('Access-Control-Allow-Origin', '*');
       res.header('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS, PUT, PATCH');
@@ -22,9 +26,6 @@ class App {
 
     this.app.use(accessControl);
     this.app.use(express.json());
-    this.app.use(cors({
-      origin: "https://task-manager-by-jplage.vercel.app/",
-    }));
   }
 
   private routes(): void {
