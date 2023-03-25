@@ -1,10 +1,9 @@
 import axios from 'axios';
 
-const api = axios({
-  method: 'get',
-  url: 'https://077e-54-232-16-28.ngrok.io',
+const api = axios.create({
+  baseURL: 'https://077e-54-232-16-28.ngrok.io',
   headers: {
-    'Access-Control-Allow-Origin': 'https://task-manager-by-jplage.vercel.app',
+    'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json',
   },
 });
