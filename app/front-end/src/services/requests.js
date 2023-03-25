@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://taskmanger-backed-production.up.railway.app',
+  baseURL: 'https://30c2-54-232-16-28.ngrok.io',
 });
 
 export const requestData = async (endpoint, body) => {
