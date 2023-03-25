@@ -4,7 +4,7 @@ import { requestData, requestEdit, requestErase } from '../services/requests';
 import Loading from './Loading';
 
 const TasksTable = ({ currentFilter }) => {
-  const endpoint = '/';
+  const endpoint = '/tasks';
 
   const [tasks, setTasks] = useState([]);
 
@@ -13,7 +13,7 @@ const TasksTable = ({ currentFilter }) => {
     .catch((error) => console.log(error));
 
   useEffect(() => {
-    const apiTasks = '/';
+    const apiTasks = '/tasks';
 
     switch (currentFilter) {
     case 'Status':
