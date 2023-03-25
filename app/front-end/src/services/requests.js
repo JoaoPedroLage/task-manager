@@ -6,8 +6,7 @@ const api = axios.create({
     'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json',
   },
-}
-);
+});
 
 export const requestData = async (endpoint, body) => {
   const { data } = await api.get(endpoint, body);
