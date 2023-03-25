@@ -1,8 +1,16 @@
 import axios from 'axios';
 
-const api = axios.create({
-  baseURL: 'https://30c2-54-232-16-28.ngrok.io',
-});
+const api = axios.create(
+  'https://30c2-54-232-16-28.ngrok.io',
+  {
+    method: 'GET',
+    mode: 'no-cors',
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json',
+    },
+  }
+);
 
 export const requestData = async (endpoint, body) => {
   const { data } = await api.get(endpoint, body);
