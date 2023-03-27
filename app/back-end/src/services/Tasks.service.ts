@@ -19,7 +19,7 @@ export default class MatchService implements ITasksService {
       tasksFound.sort((a, b) => b.taskName - a.taskName);
     } else if (!filter) {
       tasksFound = await this._tasksModel.findAll();
-      code = 204;
+      tasksFound.length === 0 ? code = 204 : code = 200;
     }
 
     if (!tasksFound) return { code: 401, message: 'Tasks not found' };
