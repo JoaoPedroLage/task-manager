@@ -6,6 +6,7 @@ export default class MatchService implements ITasksService {
 
   public async findAll(filter: string | any) {
     let tasksFound;
+    let code = 200;
 
     if (filter === 'status') {
       tasksFound = await this._tasksModel.findAll();
@@ -18,11 +19,12 @@ export default class MatchService implements ITasksService {
       tasksFound.sort((a, b) => b.taskName - a.taskName);
     } else if (!filter) {
       tasksFound = await this._tasksModel.findAll();
+      code = 204;
     }
 
     if (!tasksFound) return { code: 401, message: 'Tasks not found' };
 
-    return { code: 200, tasks: tasksFound };
+    return { code, tasks: tasksFound };
   }
 
   public async create(dataReq: TaskData) {
