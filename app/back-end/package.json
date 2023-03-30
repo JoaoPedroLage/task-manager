@@ -5,7 +5,7 @@
   "main": "./build/server",
   "scripts": {
     "prestart": "npx -y tsc",
-    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && node .",
+    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
